@@ -304,7 +304,7 @@ function changeImage(imageNumber) {
         <div class="grid grid-cols-4 gap-5 h-80 mt-8 max-sm:mt-4 max-sm:grid-cols-2">
                 <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                     <div class="h-4/5 border w-full rounded-lg bg-gray-300">
-                        <img src="/images/Neptune.PNG" class="h-full w-full">
+                        <img src="/images/Neptune.png" class="h-full w-full">
                     </div>
                     <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                         <a href="" target="_blank"><div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
@@ -313,7 +313,7 @@ function changeImage(imageNumber) {
                 </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                 <div class="h-4/5 border w-full rounded-lg bg-gray-300">
-                    <img src="/images/Neptune.PNG" class="h-full w-full">
+                    <img src="/images/Neptune.png" class="h-full w-full">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                     <a href="" target="_blank"><div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
@@ -322,7 +322,7 @@ function changeImage(imageNumber) {
             </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                 <div class="h-4/5 border w-full rounded-lg bg-gray-300">
-                    <img src="/images/Neptune.PNG" class="h-full w-full">
+                    <img src="/images/Neptune.png" class="h-full w-full">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                     <a href="" target="_blank"><div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
@@ -331,7 +331,7 @@ function changeImage(imageNumber) {
             </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                 <div class="h-4/5 border w-full rounded-lg bg-gray-300">
-                    <img src="/images/Neptune.PNG" class="h-full w-full">
+                    <img src="/images/Neptune.png" class="h-full w-full">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                     <a href="https://www.figma.com/file/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=0-1&mode=design&t=iYFpebqU0NdKL0di-0" target="_blank"> <div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
