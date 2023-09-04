@@ -97,12 +97,12 @@ setInterval(() => {
                     <div class="col-span-3 max-sm:col-span-4 text-xl max-sm:text-sm tracking-wider font-bold text-[#1F413B]">MY SKILLSET <span class="text-[#2F6859]">(hard skill)</span><span class="ml-20 max-sm:ml-3">></span></div>
                     <div class="col-start-4 max-sm:col-start-5 max-sm:col-span-2 text-xl max-sm:text-sm tracking-wider text-[#1F413B]">created by <span class="font-bold">Non</span></div>
                 </div>
-                <div class="grid grid-cols-4 gap-5 max-sm:grid-cols-2 h-[10cm] max-sm:h-[4cm] mt-5 max-sm:mt-3" v-motion-fade-visible v-motion-fade>
+                <div class="grid grid-cols-4 gap-5 max-sm:gap-2 max-sm:grid-cols-2 h-[10cm] max-sm:h-[4cm] mt-5 max-sm:mt-3" v-motion-fade-visible v-motion-fade>
                     <div class="border h-full bg-[#1F413B] rounded-xl">
                         <div class="flex justify-center text-white my-3 text-xl">FRONT-END</div>
-                        <div class="grid grid-cols-2 bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
+                        <div class="grid grid-cols-2 bg-white mx-5 max-sm:grid-cols-2 max-sm:mx-0 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
-                                <img src="/images/image_18.png" class="h-20 max-sm:h-14 max-sm:w-18">
+                                <img src="/images/image_18.png" class="h-20 max-sm:h-14">
                             </div>
                             <div class="flex justify-center mt-5">
                                 <img src="/images/image_19.png" class="h-20 max-sm:h-14">
@@ -117,7 +117,7 @@ setInterval(() => {
                     </div>
                     <div class="border h-full bg-[#1F413B] rounded-xl">
                         <div class="flex justify-center text-white my-3 text-xl">BACK-END</div>
-                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
+                        <div class="grid grid-cols-1 bg-white mx-5 max-sm:mx-0 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
                                 <img src="/images/image_22.png" class="h-20 max-sm:h-14">
                             </div>
@@ -128,7 +128,7 @@ setInterval(() => {
                     </div>
                     <div class="border h-full bg-[#1F413B] rounded-xl">
                         <div class="flex justify-center text-white my-3 text-xl">DATABASE</div>
-                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
+                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-0 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
                                 <img src="/images/image_28.png" class="h-20 max-sm:h-14">
                             </div>
@@ -139,7 +139,7 @@ setInterval(() => {
                     </div>
                     <div class="border h-full bg-[#1F413B] rounded-xl">
                         <div class="flex justify-center text-white my-3 text-xl">DEVOPS</div>
-                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
+                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-0 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
                                 <img src="/images/image_25.png" class="h-20 max-sm:h-14">
                             </div>
@@ -270,15 +270,15 @@ setInterval(() => {
                     <span class="max-sm:col-start-2 font-bold">FACEBOOK:</span>
                     <div class="max-sm:col-start-2 max-sm:col-span-7">SIT HelloWorld</div>
                 </div>
-                <div class="grid grid-cols-3 gap-5 ml-10 max-sm:ml-0 max-sm:gap-0.5">
+                <div class="grid grid-cols-3 gap-5 ml-10 max-sm:ml-1 max-sm:gap-0.5 max-sm:w-fit">
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-white">
-                        <img src="/images/f1.png" class="">
+                        <img src="/images/f1.png" class="max-sm:h-12 max-sm:w-12 h-24">
                     </div>
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24">
-                        <img src="/images/f2.png" class="">
+                        <img src="/images/f2.png" class="max-sm:h-12 max-sm:w-12 h-24">
                     </div>
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24">
-                        <img src="/images/f3.png" class="">
+                        <img src="/images/f3.png" class="max-sm:h-12 max-sm:w-12 h-24">
                     </div>
                 </div> 
             </div>
