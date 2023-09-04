@@ -40,8 +40,8 @@ function changeImage(imageNumber) {
 <template>
     <div class="home">
         <div class="bg-[#27423D] h-5 max-sm:h-3"></div>
-        <div class="flex justify-center h-[12.5cm] max-sm:h-[9cm] bg-[url('/images/D3-Pan-145.jpg')] w-full">
-            <div class="w-5/6 h-full">
+        <div class="flex justify-center h-[12.5cm] max-sm:h-[9cm] max-sm:w-fit bg-[url('/images/D3-Pan-145.jpg')] w-full">
+            <div class="w-5/6 max-sm:w-11/12 h-full">
                 <div class="mt-2 flex justify-center items-center">
                     <div class=" h-10 w-56 flex justify-center items-center text-[#27423D] text-3xl tracking-widest">Non Project</div>
                 </div>
@@ -343,8 +343,8 @@ function changeImage(imageNumber) {
                     <!-- <img src="/images/Neptune.png" class="h-full w-full"> -->
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
-                    <a href="https://www.figma.com/file/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=0-1&mode=design&t=iYFpebqU0NdKL0di-0" target="_blank"> <div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
-                    <a href="" target="_blank" class="flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">MORE</a>
+                    <a href="https://www.figma.com/proto/M35yOfYD32UABPsZNHPNFN/Untitled?node-id=1-4&starting-point-node-id=1%3A4&mode=design&t=qDeFwD38kURP25KB-1" target="_blank"> <div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
+                    <a href="https://www.figma.com/file/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=0%3A1&mode=design&t=MwjzZlppmIeLvwMP-1" target="_blank" class="flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">Figma</a>
                 </div>
             </div>
         </div>
@@ -367,7 +367,7 @@ function changeImage(imageNumber) {
     </div>
     <div class="max-sm:hidden max-sm:mb-20">
         <div class="flex justify-center my-5">
-            <div class="w-5/6 font-bold tracking-widest flex justify-between items-end">
+            <div class="w-5/6 max-sm:w-11/12 font-bold tracking-widest flex justify-between items-end">
                 <div class="text-5xl text-[#2F6859]"><span class="text-6xl">F</span>RONT-END TEAM</div>
                 <div class="text-[#1F413B] text-xl"><span class="font-normal">2022</span> INT203-PROJECT I & II</div>
             </div>
@@ -406,7 +406,7 @@ function changeImage(imageNumber) {
             </div>
         </div>
         <div class="flex justify-center my-5">
-            <div class="w-5/6 font-bold tracking-widest">
+            <div class="w-5/6 max-sm:w-11/12 font-bold tracking-widest">
                 <div class="text-5xl text-[#2F6859]"><span class="text-6xl">F</span>RONT-END, <span class="text-6xl">B</span>ACK-END, <span class="text-6xl">D</span>EV<span class="text-6xl">O</span>PS</div>
                 <div class="text-[#1F413B] text-xl"><span class="font-normal">2022</span>&nbsp;INT221-Integrated Projects I</div>
             </div>
@@ -429,7 +429,7 @@ function changeImage(imageNumber) {
         </div>
 
         <div class="flex justify-center my-5">
-            <div class="w-5/6 font-bold flex justify-between items-end">
+            <div class="w-5/6 max-sm:w-11/12 font-bold flex justify-between items-end">
                 <div class="text-5xl text-[#2F6859] tracking-widest"><span class="text-6xl">U</span>X/UI DESIGN</div>
                 <div class="text-[#1F413B] text-xl"><span class="font-normal">2021</span>&nbsp;INT-204 USER EXPERIENCE DESIGN</div>
             </div>
@@ -458,7 +458,7 @@ function changeImage(imageNumber) {
             </div>
         </div>
     </div>
-    <div class="max-sm:mt-32">
+    <div class="max-sm:mt-44">
         <Footer class=""/> 
     </div>
 </div>

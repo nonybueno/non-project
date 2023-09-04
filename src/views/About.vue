@@ -7,7 +7,7 @@ import Footer from '../components/Footer.vue';
     <div class="w-full bg-[#2F6859] max-sm:p-0 max-sm:m-0">
     <div class="bg-[#27423D] h-5 max-sm:h-3"></div>
     <div class="flex justify-center items-center">
-    <div class="w-5/6 h-full">
+    <div class="w-5/6 max-sm:w-11/12 h-full">
                 <div class="mt-2 flex justify-center items-center">
                     <div class=" h-10 w-56 flex justify-center items-center text-white text-3xl tracking-widest">Non Project</div>
                 </div>
@@ -68,7 +68,7 @@ import Footer from '../components/Footer.vue';
                             <div class="text-xl mt-5 text-[#5A5A5A]">January 29 2003</div>
                         </div>
                     </div>
-                <div class=" col-span-3 text-xl text-[#202020] mt-14 mr-3 tracking-wide max-sm:mt-96">
+                <div class=" col-span-3 text-xl text-[#202020] mt-14 mr-3 tracking-wide max-sm:mt-[23rem]">
                     <div class="max-sm:hidden max-sm:mt-10" v-motion-fade-visible v-motion-fade>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am currently a third-year student pursuing a bachelor's degree in Information Technology at King Mongkut's University of Technology Thonburi. Ever since I was in high school, I developed a passion for coding. The idea of constantly learning and exploring new technologies greatly appealed to me.</div>
                     </div>
                     </div>
@@ -79,7 +79,7 @@ import Footer from '../components/Footer.vue';
                         </div>
                         <div class="border h-full rounded-xl bg-[#2F6859] ">
                             <div class="flex justify-center text-2xl font-bold items-center mt-10 max-sm:mt-5">LIVE IN</div>
-                            <div class="mx-5 mt-10 flex justify-center max-sm:mb-5 max-sm:mt-5">NakhonPathom</div>
+                            <div class="mx-5 mt-10 flex justify-center max-sm:mb-5 max-sm:mt-5">298 M.1 St.HuaiPlu Nakhonchaisri NakhonPathom</div>
                         </div>
                         <div class="border h-full rounded-xl bg-[#2F6859] ">
                             <div class="flex justify-center text-2xl font-bold items-center mt-10 max-sm:mt-5">FACULTY</div>
