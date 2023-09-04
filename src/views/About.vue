@@ -47,7 +47,7 @@ import Footer from '../components/Footer.vue';
         <div class="w-full bg-[#2F6859] h-60">
             <div class="flex justify-center h-full">
                 <div class="w-5/6 max-sm:w-11/12 bg-white grid grid-cols-5 rounded-t-xl">
-                    <div v-motion-fade-visible v-motion-fade class="mt-10 max-sm:mt-5 col-span-2 flex justify-center"><img src="images/mypic2.jpg" class="h-52 w-52 max-sm:w-36 max-sm:h-36 rounded-full"></div>
+                    <div v-motion-fade-visible v-motion-fade class="mt-10 max-sm:mt-5 col-span-2 flex justify-center"><img src="/images/mypic2.jpg" class="h-52 w-52 max-sm:w-36 max-sm:h-36 rounded-full"></div>
                     <div class="col-span-3 mr-3 tracking-wide max-sm:tracking-normal">
                         <div class="text-3xl text-black font-bold mt-14 max-sm:mt-5"><span class="text-[#00303D] max-sm:tracking-normal tracking-wider">&nbsp;THANINPONG</span></div>
                         <div v-motion-fade-visible v-motion-fade class="text-xl mt-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, My name is Thaninpong Panthawong, but you can call me Non. I currently reside in Nakhon Pathom province. I completed my entire schooling journey at Sukhondheerawit School, from primary to high school.

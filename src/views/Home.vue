@@ -23,15 +23,15 @@ setInterval(() => {
       }
 }, 200);
 
-const image = ref( 'images/D3-Pan-145.jpg')
+const image = ref( '/images/D3-Pan-145.jpg')
 
 function changeImage(imageNumber) {
             if (imageNumber === 'next') {
-                image.value = 'images/D3-Pan-145.jpg';
+                image.value = '/images/D3-Pan-145.jpg';
             } else if (imageNumber === 'back') {
-                image.value = 'images/pic1.jpg';
+                image.value = '/images/pic1.jpg';
             } else if (imageNumber === 3) {
-                image.value = 'images/pic11.jpg';
+                image.value = '/images/pic11.jpg';
             }
         }
 
@@ -40,7 +40,7 @@ function changeImage(imageNumber) {
 <template>
     <div class="home">
         <div class="bg-[#27423D] h-5 max-sm:h-3"></div>
-        <div class="flex justify-center h-[12.5cm] max-sm:h-[9cm] bg-[url('images/D3-Pan-145.jpg')] w-full">
+        <div class="flex justify-center h-[12.5cm] max-sm:h-[9cm] bg-[url('/images/D3-Pan-145.jpg')] w-full">
             <div class="w-5/6 h-full">
                 <div class="mt-2 flex justify-center items-center">
                     <div class=" h-10 w-56 flex justify-center items-center text-[#27423D] text-3xl tracking-widest">Non Project</div>
@@ -59,10 +59,10 @@ function changeImage(imageNumber) {
                 </div>
                 <div v-motion-slide-left class=" mt-8 ml-20 max-sm:ml-0 max-sm:mt-4 max-sm:text-sm w-fit px-2 py-1 text-xl bg-white tracking-widest">I am developer for <span class="text-[#c9184a]">Front-End</span>, <span class="text-[#c9184a]">Back-End</span> and <span class="text-[#c9184a]">DevOps</span></div>
                 <div class=" ml-20 h-24 w-full flex items-center gap-8 max-sm:ml-0 max-sm:justify-center">
-                    <a href="https://www.facebook.com/lnw.non.1" target="_blank" class="hover:scale-125 h-12 rounded-full bg-[#1F413B] w-12 max-sm:h-10 max-sm:w-10"><img src="images/facebook.png" alt="facebook" class="rounded-full p-1"></a>
-                    <a href="https://www.instagram.com/nonchyy_/" target="_blank" class="hover:scale-125 h-12 rounded-full bg-[#1F413B] w-12 max-sm:h-10 max-sm:w-10"><img src="images/ig.png" alt="ig" class="rounded-full p-2"></a>
-                    <a href="https://github.com/nonybueno" target="_blank" class="hover:scale-125 h-12 rounded-full bg-[#1F413B] w-12 max-sm:h-10 max-sm:w-10"><img src="images/github.png" alt="github" class="rounded-full p-1.5"></a>
-                    <a href="mailto:thaninpong.non@mail.kmutt.ac.th" target="_blank" class="hover:scale-125 h-12 rounded-full bg-[#1F413B] w-12 max-sm:h-10 max-sm:w-10"><img src="images/email.png" alt="email" class="rounded-full"></a>
+                    <a href="https://www.facebook.com/lnw.non.1" target="_blank" class="hover:scale-125 h-12 rounded-full bg-[#1F413B] w-12 max-sm:h-10 max-sm:w-10"><img src="/images/facebook.png" alt="facebook" class="rounded-full p-1"></a>
+                    <a href="https://www.instagram.com/nonchyy_/" target="_blank" class="hover:scale-125 h-12 rounded-full bg-[#1F413B] w-12 max-sm:h-10 max-sm:w-10"><img src="/images/ig.png" alt="ig" class="rounded-full p-2"></a>
+                    <a href="https://github.com/nonybueno" target="_blank" class="hover:scale-125 h-12 rounded-full bg-[#1F413B] w-12 max-sm:h-10 max-sm:w-10"><img src="/images/github.png" alt="github" class="rounded-full p-1.5"></a>
+                    <a href="mailto:thaninpong.non@mail.kmutt.ac.th" target="_blank" class="hover:scale-125 h-12 rounded-full bg-[#1F413B] w-12 max-sm:h-10 max-sm:w-10"><img src="/images/email.png" alt="email" class="rounded-full"></a>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@ function changeImage(imageNumber) {
             </div>
             <div class="h-[15cm] max-sm:h-[7cm] max-sm:pl-2 relative pl-8 bg-[#2F6859]" v-motion-fade-visible v-motion-fade>
                 <div class="h-[16cm] border-[0.15cm] max-sm:h-[8cm] border-white max-sm:w-3/6 w-1/3 absolute bottom-9 max-sm:bottom-3">
-                    <img src="images/D3-Pan-481.jpg" alt="myPic" class="h-full">
+                    <img src="/images/D3-Pan-481.jpg" alt="myPic" class="h-full">
                 </div>
                 <div class=" w-full h-full grid grid-cols-3">
                     <div class="col-start-2 col-span-2 h-full max-sm:ml-2">
@@ -114,16 +114,16 @@ function changeImage(imageNumber) {
                         <div class="flex justify-center text-white my-3 text-xl">FRONT-END</div>
                         <div class="grid grid-cols-2 bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
-                                <img src="images/image_18.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_18.png" class="h-20 max-sm:h-14">
                             </div>
                             <div class="flex justify-center mt-5">
-                                <img src="images/image_19.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_19.png" class="h-20 max-sm:h-14">
                             </div>
                             <div class="flex justify-center my-5">
-                                <img src="images/image_20.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_20.png" class="h-20 max-sm:h-14">
                             </div>
                             <div class="flex justify-center my-5">
-                                <img src="images/image_21.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_21.png" class="h-20 max-sm:h-14">
                             </div>
                         </div>
                     </div>
@@ -131,10 +131,10 @@ function changeImage(imageNumber) {
                         <div class="flex justify-center text-white my-3 text-xl">BACK-END</div>
                         <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
-                                <img src="images/image_22.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_22.png" class="h-20 max-sm:h-14">
                             </div>
                             <div class="flex justify-center my-5">
-                                <img src="images/image_23.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_23.png" class="h-20 max-sm:h-14">
                             </div>
                         </div>
                     </div>
@@ -142,10 +142,10 @@ function changeImage(imageNumber) {
                         <div class="flex justify-center text-white my-3 text-xl">DATABASE</div>
                         <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
-                                <img src="images/image_28.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_28.png" class="h-20 max-sm:h-14">
                             </div>
                             <div class="flex justify-center my-5">
-                                <img src="images/oracle.png" class="h-20 max-sm:h-14">
+                                <img src="/images/oracle.png" class="h-20 max-sm:h-14">
                             </div>
                         </div>
                     </div>
@@ -153,10 +153,10 @@ function changeImage(imageNumber) {
                         <div class="flex justify-center text-white my-3 text-xl">DEVOPS</div>
                         <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
-                                <img src="images/image_25.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_25.png" class="h-20 max-sm:h-14">
                             </div>
                             <div class="flex justify-center my-5">
-                                <img src="images/image_26.png" class="h-20 max-sm:h-14">
+                                <img src="/images/image_26.png" class="h-20 max-sm:h-14">
                             </div>
                         </div>
                     </div>
@@ -171,26 +171,26 @@ function changeImage(imageNumber) {
         <div class="grid grid-cols-2 mt-5 gap-5 max-sm:mt-3 max-sm:gap-2">
             <div class="text-white">
                 <div class="h-[28rem] max-sm:h-[16rem] bg-white m-3 max-sm:m-0" v-motion-fade-visible v-motion-fade>
-                    <img src="images/D1-202.jpg" alt="group" class="h-full w-full max-sm:h-full">
+                    <img src="/images/D1-202.jpg" alt="group" class="h-full w-full max-sm:h-full">
                 </div>
                 <div class="text-xl max-sm:text-xs tracking-widest mt-8 max-sm:mt-3 flex items-center max-sm:grid max-sm:grid-cols-9">
-                    <img src="images/ig.png" alt="ig" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
+                    <img src="/images/ig.png" alt="ig" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
                     <span class="max-sm:col-start-2 font-bold">IG:</span>
                     <div class="max-sm:col-start-2 max-sm:col-span-7">sit.it.starterpack</div>
                 </div>
                 <div class="text-xl max-sm:text-xs tracking-widest my-5 flex items-center max-sm:my-4 max-sm:grid max-sm:grid-cols-9">
-                    <img src="images/facebook.png" alt="facebook" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
+                    <img src="/images/facebook.png" alt="facebook" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
                     <span class="max-sm:col-start-2 font-bold">FACEBOOK:</span>
                     <div class="max-sm:col-start-2 max-sm:col-span-7">IT#29 Starter Pack</div>
                 </div>
                 <div class="grid grid-cols-3 gap-5 ml-10 max-sm:ml-1 max-sm:gap-0.5">
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-white">
-                        <img src="images/Logo.png">
+                        <img src="/images/Logo.png">
                     </div>
-                    <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-[url('images/Profile.png')]">
+                    <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-[url('/images/Profile.png')]">
                     </div>
-                    <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-[url('images/Neptune-bg.png')]">
-                        <img src="images/Neptune.png" class="">
+                    <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-[url('/images/Neptune-bg.png')]">
+                        <img src="/images/Neptune.png" class="">
                     </div>
                 </div>
             </div>
@@ -216,13 +216,13 @@ function changeImage(imageNumber) {
                 </div>
                 <div class="grid grid-cols-3 gap-3 mt-10 mb-5 max-sm:mt-3" v-motion-fade-visible v-motion-fade>
                     <div>
-                        <img src="images/D3-Pan-149.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
+                        <img src="/images/D3-Pan-149.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
                     </div>
                     <div>
-                        <img src="images/D3-Pan-162.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
+                        <img src="/images/D3-Pan-162.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
                     </div>
                     <div>
-                        <img src="images/D3-Pan-171.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
+                        <img src="/images/D3-Pan-171.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
                     </div>
                 </div>
             </div>
@@ -258,39 +258,39 @@ function changeImage(imageNumber) {
                 </div>
                 <div class="grid grid-cols-3 gap-3 mt-16 mb-5 max-sm:mt-3" v-motion-fade-visible v-motion-fade>
                     <div class="">
-                        <img src="images/IMG_3878.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
+                        <img src="/images/IMG_3878.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
                     </div>
                     <div class="">
-                        <img src="images/IMG_3885.jpg" alt="myPic" class="h-60 max-sm:h-20">
+                        <img src="/images/IMG_3885.jpg" alt="myPic" class="h-60 max-sm:h-20">
                     </div>
                     <div class="">
-                        <img src="images/IMG_3889.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
+                        <img src="/images/IMG_3889.jpg" alt="myPic" class="h-60 w-full max-sm:h-20">
                     </div>
                 </div>
             </div>
             <div class="">
                 <div class="h-[28rem] max-sm:h-[15rem] max-md:m-0 bg-gray-400 m-3" v-motion-fade-visible v-motion-fade>
-                    <img src="images/pic11.jpg" alt="group" class="h-full">
+                    <img src="/images/pic11.jpg" alt="group" class="h-full">
                 </div>
                 <div class="text-xl max-sm:text-xs tracking-widest mt-8 max-sm:mt-3 flex items-center max-sm:grid max-sm:grid-cols-9">
-                    <img src="images/ig.png" alt="ig" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
+                    <img src="/images/ig.png" alt="ig" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
                     <span class="max-sm:col-start-2 font-bold">IG:</span>
                     <div class="max-sm:col-start-2 max-sm:col-span-7">sithelloworld</div>
                 </div>
                 <div class="text-xl max-sm:text-xs tracking-widest max-sm:my-4 mt-8 max-sm:mt-3 flex items-center max-sm:grid max-sm:grid-cols-9">
-                    <img src="images/facebook.png" alt="facebook" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
+                    <img src="/images/facebook.png" alt="facebook" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
                     <span class="max-sm:col-start-2 font-bold">FACEBOOK:</span>
                     <div class="max-sm:col-start-2 max-sm:col-span-7">SIT HelloWorld</div>
                 </div>
                 <div class="grid grid-cols-3 gap-5 ml-10 max-sm:ml-0 max-sm:gap-0.5">
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-white">
-                        <img src="images/f1.png" class="">
+                        <img src="/images/f1.png" class="">
                     </div>
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24">
-                        <img src="images/f2.png" class="">
+                        <img src="/images/f2.png" class="">
                     </div>
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24">
-                        <img src="images/f3.png" class="">
+                        <img src="/images/f3.png" class="">
                     </div>
                 </div> 
             </div>
@@ -304,7 +304,7 @@ function changeImage(imageNumber) {
         <div class="grid grid-cols-4 gap-5 h-80 mt-8 max-sm:mt-4 max-sm:grid-cols-2">
                 <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                     <div class="h-4/5 border w-full rounded-lg bg-gray-300">
-                        <img src="images/Neptune.png" class="h-full w-full">
+                        <img src="/images/Neptune.png" class="h-full w-full">
                     </div>
                     <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                         <a href="" target="_blank"><div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
@@ -313,7 +313,7 @@ function changeImage(imageNumber) {
                 </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                 <div class="h-4/5 border w-full rounded-lg bg-gray-300">
-                    <img src="images/Neptune.png" class="h-full w-full">
+                    <img src="/images/Neptune.png" class="h-full w-full">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                     <a href="" target="_blank"><div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
@@ -322,7 +322,7 @@ function changeImage(imageNumber) {
             </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                 <div class="h-4/5 border w-full rounded-lg bg-gray-300">
-                    <img src="images/Neptune.png" class="h-full w-full">
+                    <img src="/images/Neptune.png" class="h-full w-full">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                     <a href="" target="_blank"><div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
@@ -331,7 +331,7 @@ function changeImage(imageNumber) {
             </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                 <div class="h-4/5 border w-full rounded-lg bg-gray-300">
-                    <img src="images/Neptune.png" class="h-full w-full">
+                    <img src="/images/Neptune.png" class="h-full w-full">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                     <a href="https://www.figma.com/file/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=0-1&mode=design&t=iYFpebqU0NdKL0di-0" target="_blank"> <div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
