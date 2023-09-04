@@ -303,7 +303,7 @@ function changeImage(imageNumber) {
         </div>
         <div class="grid grid-cols-4 gap-5 h-80 mt-8 max-sm:mt-4 max-sm:grid-cols-2">
                 <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
-                    <div class="h-4/5 border w-full rounded-lg bg-gray-900 flex justify-center  items-center">
+                    <div class="h-4/5 border w-full rounded-lg bg-[#2F6859] flex justify-center  items-center">
                         <img src="/images/alumili-1.png" class="h-40 w-40">
                     </div>
                     <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
@@ -312,7 +312,7 @@ function changeImage(imageNumber) {
                     </div>
                 </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
-                <div class="h-4/5 border w-full rounded-lg bg-gray-900 flex justify-center items-center">
+                <div class="h-4/5 border w-full rounded-lg bg-[#2F6859] flex justify-center items-center">
                     <img src="/images/alumili-2.png" class="h-40 w-40">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
@@ -321,7 +321,7 @@ function changeImage(imageNumber) {
                 </div>
             </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
-                <div class="h-4/5 border w-full rounded-lg bg-gray-900 flex justify-center items-center">
+                <div class="h-4/5 border w-full rounded-lg bg-[#2F6859] flex justify-center items-center">
                     <img src="/images/B_N_W-3.png" class="h-40 w-40">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
@@ -330,7 +330,7 @@ function changeImage(imageNumber) {
                 </div>
             </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
-                <div class="h-4/5 border w-full rounded-lg bg-gray-900 flex justify-center items-center">
+                <div class="h-4/5 border w-full rounded-lg bg-[#2F6859] flex justify-center items-center">
                     <svg width="200" height="150" viewBox="0 0 262 262" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <circle cx="131" cy="131" r="131" fill="url(#pattern0)"/>
                         <defs>
