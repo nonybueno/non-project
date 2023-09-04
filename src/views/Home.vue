@@ -185,7 +185,7 @@ function changeImage(imageNumber) {
                 </div>
                 <div class="grid grid-cols-3 gap-5 ml-10 max-sm:ml-1 max-sm:gap-0.5">
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-white">
-                        <img src="/images/Logo.png">
+                        <img src="/images/start.png">
                     </div>
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-[url('/images/Profile.png')]">
                     </div>
