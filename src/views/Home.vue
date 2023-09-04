@@ -374,7 +374,7 @@ function changeImage(imageNumber) {
         </div>
         <div class="w-screen bg-[#2F6859] h-96 flex">
             <div class="bg-gray-400 h-full w-2/5">
-
+                <img src="/images/al-1.jpg" alt="alumilize" class="h-full w-full">
             </div>
             <div class="ml-5 mt-3 text-white w-2/4">
                 <div class="text-4xl font-semibold tracking-wider"><span class="text-7xl font-bold">Word</span>&nbsp;#TYPING TEST WEBSITE</div>
@@ -382,16 +382,16 @@ function changeImage(imageNumber) {
                 <div class="mt-3 text-xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a website typing speed test that enables users to check their typing speed, accuracy, and completion time.</div>
                 <div class="text-xl mt-3 ">Used Languages, libaries, frameworks: <span class="text-yellow-500">Vue.js, HTML, CSS, JavaScript, Tailwind</span></div>
                 <div class="text-xl mt-3">Repository: <a href="https://github.com/Nine0512/PROJECT1-SEC-2-Alumilize" class="underline-offset-1 underline" target="_blank">https://github.com/Nine0512/PROJECT1-SEC-2-Alumilize</a></div>
-                <div class="text-xl mt-3">Website: <a href="https://alumilizeType.com" class="underline-offset-1 underline" target="_blank">https://alumilizeType.com</a></div>
+                <div class="text-xl mt-3">Website: <a href="https://clinquant-bienenstitch-fe9c36.netlify.app/" class="underline-offset-1 underline" target="_blank">https://clinquant-bienenstitch-fe9c36.netlify.app/</a></div>
                 <div class="flex justify-end">
-                    <div class="cursor-pointer rounded-xl bg-white text-[#2F6859] w-24 flex justify-center h-8 items-center text-md mt-3 hover:scale-110">Website</div>
+                    <a href="https://clinquant-bienenstitch-fe9c36.netlify.app/" target="_blank" class="cursor-pointer rounded-xl bg-white text-[#2F6859] w-24 flex justify-center h-8 items-center text-md mt-3 hover:scale-110">Website</a>
                 </div>
             </div>
         </div>
 
         <div class="w-screen bg-white h-96 flex">
             <div class="bg-gray-500 h-full w-2/5">
-
+                <img src="/images/al-b.jpg" alt="alumilize" class="h-full w-full">
             </div>
             <div class="ml-5 mt-3 text-[#1F413B] w-2/4">
                 <div class="text-4xl font-semibold tracking-wider"><span class="text-7xl font-bold">E</span>&nbsp;-Book Online Bookstore</div>
@@ -399,7 +399,7 @@ function changeImage(imageNumber) {
                 <div class="mt-3 text-xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Create a website for users. It is a bookstore online that is a one stop service that has the ordering of products and authentication for safety.</div>
                 <div class="text-xl mt-3">Used Languages, libaries, frameworks: <span class="text-yellow-500">Vue.js, HTML, CSS, JavaScript, Tailwind</span></div>
                 <div class="text-xl mt-3">Repository: <a href="https://github.com/Nine0512/PROJECT2-SEC-2-Alumilize" class="underline-offset-1 underline" target="_blank">https://github.com/Nine0512/PROJECT2-SEC-2-Alumilize</a></div>
-                <div class="text-xl mt-3">Website: <a href="https://clinquant-bienenstitch-fe9c36.netlify.app/" class="underline-offset-1 underline" target="_blank">https://alumilizeType.com</a></div>
+                <div class="text-xl mt-3">Website: <a href="" class="underline-offset-1 underline" target="_blank">https://alumilize-Ebook.com</a></div>
                 <div class="flex justify-end">
                     <div class="cursor-pointer rounded-xl bg-[#2F6859] text-white w-24 flex justify-center h-8 items-center text-md mt-5 hover:scale-110">Website</div>
                 </div>
@@ -413,7 +413,7 @@ function changeImage(imageNumber) {
         </div>
         <div class="w-screen bg-[#2F6859] h-96 flex">
             <div class="bg-gray-400 w-2/5">
-
+                <img src="/images/bnw.jpg" alt="bnw" class="w-full h-full">
             </div>
             <div class="ml-5 text-white w-2/4 mt-1">
                 <div class="text-4xl font-semibold tracking-wider"><span class="text-7xl font-bold">SIT</span>&nbsp;-Announcement System</div>
@@ -421,9 +421,9 @@ function changeImage(imageNumber) {
                 <div class="mt-2 text-xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            Participating in: Front-End and Back-End Team Create a website for students by making announcements and posts from the university. which is accessible to all students.</div>
                 <div class="text-xl mt-2 ">Used Languages, libaries, frameworks: <span class="text-yellow-500">Vue.js, HTML, CSS, JavaScript, Tailwind, Spring Boots, Java</span></div>
                 <div class="text-xl mt-2">Repository: <a href="https://github.com/nonybueno/PROJECT-BNW" class="underline-offset-1 underline" target="_blank">https://github.com/nonybueno/PROJECT-BNW</a></div>
-                <div class="text-xl mt-2">Website: <a href="http://intproj22.sit.kmutt.ac.th/ssa2/announcement" class="underline-offset-1 underline" target="_blank">https://alumilizeType.com</a></div>
+                <div class="text-xl mt-2">Website: <a href="http://intproj22.sit.kmutt.ac.th/ssa2/admin/announcement" class="underline-offset-1 underline" target="_blank">http://intproj22.sit.kmutt.ac.th/ssa2/admin/announcement</a></div>
                 <div class="flex justify-end">
-                    <div class="cursor-pointer rounded-xl bg-white text-[#2F6859] w-24 flex justify-center h-8 items-center text-md mt-2 hover:scale-110">Website</div>
+                    <a href="http://intproj22.sit.kmutt.ac.th/ssa2/admin/announcement" target="_blank" class="cursor-pointer rounded-xl bg-white text-[#2F6859] w-24 flex justify-center h-8 items-center text-md mt-2 hover:scale-110">Website</a>
                 </div>
             </div>
         </div>
@@ -435,23 +435,16 @@ function changeImage(imageNumber) {
             </div>
         </div>
         <div class="w-screen bg-[#2F6859] h-96 flex">
-            <div class="w-2/5 h-full">
-                <div class="h-full w-fit" >
-                    <img id="mainImage" :src="image" class="h-full">
-                </div>
-
-                <div>
-                    <button @click="changeImage('back')" class="border rounded-full h-14 w-14">back</button>
-                    <button @click="changeImage('next')" class="border rounded-full h-14 w-14">next</button>
-                </div>
+            <div class="w-2/5">
+                <img src="/images/bus.jpg" class="h-full w-full">
             </div>
             <div class="ml-5 max-sm:ml-0 text-white w-2/4 mt-1">
                 <div class="text-4xl font-semibold tracking-wider"><span class="text-7xl font-bold">BUS</span>&nbsp;#Ticket Booking System</div>
                 <div class="text-xl">INT-204 User Experience Design</div>
                 <div class="mt-2 text-xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design a mobile app used to track buses and calculate fares based on distance traveled.</div>
                 <div class="text-xl mt-2 ">Used Languages, libaries, frameworks: <span class="text-yellow-500">Figma</span></div>
-                <div class="text-xl mt-2">Repository: <a href="https://github.com/nonybueno/PROJECT-BNW" class="underline-offset-1 underline" target="_blank">https://github.com/nonybueno/PROJECT-BNW</a></div>
-                <div class="text-xl mt-2">Website: <a href="https://www.figma.com/file/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=0%3A1&mode=design&t=tI3cd8oynDOCE8dM-1" class="underline-offset-1 underline" target="_blank">https://www.figma.com/file/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=0%3A1&mode=design&t=tI3cd8oynDOCE8dM-1</a></div>
+                <div class="text-xl mt-2">Figma : <a href="https://www.figma.com/file/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=0%3A1&mode=design&t=k4I02xaPjViXgfxS-1" class="underline-offset-1 underline" target="_blank">https://www.figma.com/</a></div>
+                <div class="text-xl mt-2">Website : <a href="https://www.figma.com/proto/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=1-4&t=aQ1CdYke7oDSDd20-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4&show-proto-sidebar=1&mode=design" class="underline-offset-1 underline" target="_blank">Prototype</a></div>
                 <div class="flex justify-end mt-5">
                     <a href="https://www.figma.com/proto/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=1-4&t=aQ1CdYke7oDSDd20-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4&show-proto-sidebar=1&mode=design" target="_blank"><div class="hover:scale-110 cursor-pointer rounded-xl bg-white text-[#2F6859] w-24 flex justify-center h-8 items-center text-md mt-2">Website</div></a>
                 </div>

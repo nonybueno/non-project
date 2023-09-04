@@ -34,7 +34,7 @@ import Footer from '../components/Footer.vue';
                     </div> -->
                     <div class="">
                         <div class="grid grid-cols-2 max-sm:grid-cols-1 h-full max-sm:gap-3 gap-2">
-                            <div class="rounded-xl bg-[#2F6859] h-32 max-sm:h-24 grid grid-cols-3 max-sm:p-1 p-2 shadowBox">
+                            <div class="rounded-xl bg-[#2F6859] h-32 max-sm:h-24 grid grid-cols-3 max-sm:p-1 p-2 shadowBox" v-motion-slide-right v-motion-slide-visible-right>
                                 <div class="bg-white rounded-xl max-sm:hidden">
 
                                 </div>
@@ -45,25 +45,25 @@ import Footer from '../components/Footer.vue';
                                     </div>
                                 </div>
                             </div>
-                            <div class="rounded-xl bg-white h-32 max-sm:h-24 grid grid-cols-3 p-2 shadowBox">
+                            <div class="rounded-xl bg-white h-32 max-sm:h-24 grid grid-cols-3 p-2 shadowBox" v-motion-slide-left v-motion-slide-visible-left>
                                 <div class="bg-white rounded-xl max-sm:hidden"></div>
                                 <div class="col-span-2 text-[#2F6859] pl-5 max-sm:pl-2 h-full flex items-center">
                                     <div>
-                                        <div class="max-sm:text-2xl tracking-widest rounded-lg w-fit px-1 py-0.5 bg-white text-[#27423D]">PHONE :</div>
+                                        <div class="max-sm:text-2xl tracking-widest rounded-lg w-fit px-1 py-0.5 bg-[#2F6859] max-sm:text-[#27423D] max-sm:bg-white text-white">PHONE :</div>
                                         <div class="tracking-wider max-sm:text-xl">099-145-0959</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="rounded-xl max-sm:bg-[#2F6859] bg-white h-32 max-sm:h-24 grid grid-cols-3 p-2 shadowBox">
+                            <div class="rounded-xl max-sm:bg-[#2F6859] bg-white h-32 max-sm:h-24 grid grid-cols-3 p-2 shadowBox" v-motion-slide-right v-motion-slide-visible-right>
                                 <div class="bg-white rounded-xl max-sm:hidden"></div>
                                 <div class="col-span-2 max-sm:text-white text-[#2F6859] pl-5 max-sm:pl-2 h-full flex items-center">
                                     <div>
-                                        <div class="max-sm:text-2xl tracking-widest rounded-lg w-fit px-1 py-0.5 bg-white text-[#27423D]">LINKTREE :</div>
+                                        <div class="max-sm:text-2xl tracking-widest rounded-lg w-fit px-1 py-0.5 max-sm:bg-white max-sm:text-[#27423D] text-white bg-[#2F6859]">LINKTREE :</div>
                                         <a href="https://linktr.ee/nonybueno" target="_blank" class="tracking-wider max-sm:text-xl">linktr.ee/nonybueno</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="rounded-xl bg-[#2F6859] max-sm:bg-white h-32 max-sm:h-24 grid grid-cols-3 p-2 shadowBox">
+                            <div class="rounded-xl bg-[#2F6859] max-sm:bg-white h-32 max-sm:h-24 grid grid-cols-3 p-2 shadowBox" v-motion-slide-left v-motion-slide-visible-left>
                                 <div class="bg-white rounded-xl max-sm:hidden"></div>
                                 <div class="col-span-2 max-sm:text-[#2F6859] text-white pl-5 max-sm:pl-2 h-full flex items-center">
                                     <div>
