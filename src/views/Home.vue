@@ -100,7 +100,7 @@ setInterval(() => {
                 <div class="grid grid-cols-4 gap-5 max-sm:gap-2 max-sm:grid-cols-2 h-[10cm] max-sm:h-[4cm] mt-5 max-sm:mt-3" v-motion-fade-visible v-motion-fade>
                     <div class="border h-full bg-[#1F413B] rounded-xl">
                         <div class="flex justify-center text-white my-3 text-xl">FRONT-END</div>
-                        <div class="grid grid-cols-2 bg-white mx-5 max-sm:grid-cols-2 max-sm:mx-0 max-sm:mb-2 rounded-lg">
+                        <div class="grid grid-cols-2 bg-white mx-5 max-sm:grid-cols-2 max-sm:mx-2 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
                                 <img src="/images/image_18.png" class="h-20 max-sm:h-14">
                             </div>
@@ -117,7 +117,7 @@ setInterval(() => {
                     </div>
                     <div class="border h-full bg-[#1F413B] rounded-xl">
                         <div class="flex justify-center text-white my-3 text-xl">BACK-END</div>
-                        <div class="grid grid-cols-1 bg-white mx-5 max-sm:mx-0 max-sm:mb-2 rounded-lg">
+                        <div class="grid grid-cols-1 bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
                                 <img src="/images/image_22.png" class="h-20 max-sm:h-14">
                             </div>
@@ -128,7 +128,7 @@ setInterval(() => {
                     </div>
                     <div class="border h-full bg-[#1F413B] rounded-xl">
                         <div class="flex justify-center text-white my-3 text-xl">DATABASE</div>
-                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-0 max-sm:mb-2 rounded-lg">
+                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
                                 <img src="/images/image_28.png" class="h-20 max-sm:h-14">
                             </div>
@@ -139,7 +139,7 @@ setInterval(() => {
                     </div>
                     <div class="border h-full bg-[#1F413B] rounded-xl">
                         <div class="flex justify-center text-white my-3 text-xl">DEVOPS</div>
-                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-0 max-sm:mb-2 rounded-lg">
+                        <div class="grid grid-cols-1  bg-white mx-5 max-sm:mx-2 max-sm:mb-2 rounded-lg">
                             <div class="flex justify-center mt-5">
                                 <img src="/images/image_25.png" class="h-20 max-sm:h-14">
                             </div>
@@ -270,8 +270,8 @@ setInterval(() => {
                     <span class="max-sm:col-start-2 font-bold">FACEBOOK:</span>
                     <div class="max-sm:col-start-2 max-sm:col-span-7">SIT HelloWorld</div>
                 </div>
-                <div class="grid grid-cols-3 gap-5 ml-10 max-sm:ml-1 max-sm:gap-0.5 max-sm:w-fit">
-                    <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-white">
+                <div class="grid grid-cols-3 gap-5 ml-10 max-sm:ml-1 max-sm:gap-0.5">
+                    <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24 bg-white"> 
                         <img src="/images/f1.png" class="max-sm:h-12 max-sm:w-12 h-24">
                     </div>
                     <div class="max-sm:h-12 max-sm:w-12 h-24 rounded-full w-24">
