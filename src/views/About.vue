@@ -72,7 +72,7 @@ import Footer from '../components/Footer.vue';
                     <div class="max-sm:hidden max-sm:mt-10" v-motion-fade-visible v-motion-fade>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am currently a third-year student pursuing a bachelor's degree in Information Technology at King Mongkut's University of Technology Thonburi. Ever since I was in high school, I developed a passion for coding. The idea of constantly learning and exploring new technologies greatly appealed to me.</div>
                     </div>
                     </div>
-                    <div class="max-sm:mt-20 max-sm:grid-cols-2 grid grid-cols-4 max-sm:mx-4 max-sm:gap-3 gap-5 h-64 mx-10 my-10 text-white tracking-wider" v-motion-slide-visible-bottom v-motion-slide-bottom>
+                    <div class="max-sm:mt-16 max-sm:grid-cols-2 grid grid-cols-4 max-sm:mx-4 max-sm:gap-3 gap-5 h-64 mx-10 my-10 text-white tracking-wider" v-motion-slide-visible-bottom v-motion-slide-bottom>
                         <div class="border h-full rounded-xl bg-[#2F6859]">
                             <div class="flex justify-center text-2xl font-bold items-center mt-10 max-sm:mt-5">STUDY AT</div>
                             <div class="mx-5 mt-10 flex justify-center max-sm:mb-5 max-sm:mt-5">King Mongkut's University of Technology Thonburi</div>
