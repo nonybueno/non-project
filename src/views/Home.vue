@@ -171,7 +171,7 @@ function changeImage(imageNumber) {
         <div class="grid grid-cols-2 mt-5 gap-5 max-sm:mt-3 max-sm:gap-2">
             <div class="text-white">
                 <div class="h-[28rem] max-sm:h-[16rem] bg-white m-3 max-sm:m-0" v-motion-fade-visible v-motion-fade>
-                    <img src="/images/D10-SIX-202.jpg" alt="group" class="h-full w-full max-sm:h-full">
+                    <img src="/images/D10-Six-202.jpg" alt="group" class="h-full w-full max-sm:h-full">
                 </div>
                 <div class="text-xl max-sm:text-xs tracking-widest mt-8 max-sm:mt-3 flex items-center max-sm:grid max-sm:grid-cols-9">
                     <img src="/images/ig.png" alt="ig" class="h-10 w-10 mr-5 max-sm:mr-0.5 max-sm:h-5 max-sm:w-5">
