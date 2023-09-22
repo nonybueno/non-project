@@ -54,14 +54,6 @@ setInterval(() => {
                 </div>
             </div>
         </div>
-        <!-- <div class="flex justify-center mt-8">
-            <div class="w-5/6">
-                <div class="grid grid-cols-5 border">
-                    <div class="col-span-3 px-5" v-motion-slide-left v-motion-slide-visible-left><img src="" class="h-96 w-full"></div>
-                    <div class="col-span-2 bg-slate-500 h-full" v-motion-slide-right v-motion-slide-visible-right><img src=""></div>
-                </div>
-            </div>
-        </div> -->
         <div class="flex justify-center ">
             <div class="w-5/6 max-sm:w-11/12">
                 <div class="flex justify-end mt-10 pb-9 text-xl max-sm:text-sm max-sm:mt-5 tracking-wider text-[#1F413B] font-bold" v-motion-fade-visible v-motion-fade>
@@ -231,17 +223,17 @@ setInterval(() => {
                 <div class="border-b-2 mx-5 mt-2 mb-10 max-sm:mb-3"></div>
                 <div class="text-xl max-sm:text-xs tracking-wide">
                     <ul class="list-disc">
-                        <li> I serve as both an academic and content creator for teaching at this camp.</li>
+                        <li>I serve as a person who manages various learning materials and also helps in procuring various materials.</li>
                     </ul>
                 </div>
                 <div class="text-xl max-sm:text-xs tracking-wide my-10 max-sm:my-2">
                     <ul class="list-disc">
-                       <li>I serve as both an academic and content creator for teaching at this camp.</li>
+                       <li>I will check the computers for any problems and take care of them.</li>
                     </ul>
                 </div>
                 <div class="text-xl max-sm:text-xs tracking-wide">
                     <ul class="list-disc">
-                       <li>In the content creator part, where my duties are check the content that will be taught in the HTML, CSS languages and  post-test content that will be used after completing the camp.</li>
+                       <li>In this camp, I will be a support person in providing assistance and assistance in various operations. To carry out the tutorial go notifications.</li>
                     </ul>
                 </div>
                 <div class="grid grid-cols-3 gap-3 mt-16 mb-5 max-sm:mt-3" v-motion-fade-visible v-motion-fade>
@@ -319,7 +311,7 @@ setInterval(() => {
             </div>
             <div class="h-full w-full border p-3 rounded-xl bg-[#1F413B]">
                 <div class="h-4/5 border w-full rounded-lg bg-[#2F6859] flex justify-center items-center">
-                    <img src="/images/buz.jpg" class="h-full w-full max-sm:w-fit">
+                    <img src="/images/buz.jpg" class="h-full w-full rounded-lg max-sm:w-fit">
                 </div>
                 <div class=" grid grid-cols-2 gap-3 h-10 mt-4 max-sm:h-8 max-sm:mt-2">
                     <a href="https://www.figma.com/proto/M35yOfYD32UABPsZNHPNFN/Untitled?node-id=1-4&starting-point-node-id=1%3A4&mode=design&t=qDeFwD38kURP25KB-1" target="_blank"> <div class="h-full flex justify-center items-center border rounded-sm cursor-pointer hover:scale-105 bg-white">LINK</div></a>
@@ -339,7 +331,7 @@ setInterval(() => {
                 <div class="text-sm text-gray-400">INT0221 Integrated Projects</div>
             </div>
             <div class="text-xl text-[#34623F] pl-2">Bus Ticket Booking System
-                <div class="text-sm text-gray-400">INT-204 User Experience Design</div>
+                <div class="text-sm text-gray-400">INT-104 User Experience Design</div>
             </div>
         </div>
     </div>
@@ -352,8 +344,11 @@ setInterval(() => {
             </div>
         </div>
         <div class="w-screen bg-[#2F6859] h-96 flex max-sm:h-fit">
-            <div class="bg-gray-400 h-full w-2/5">
-                <img src="/images/al-1.jpg" alt="alumilize" class="h-full w-full max-sm:h-24">
+            <div class="w-2/5">
+                <img src="/images/al-1.jpg" alt="alumilize" class="h-full w-full max-sm:hidden">
+                <div class="h-full w-full p-1 mob">
+                    <img src="/images/alMob.png" class="rounded-xl bg-white w-full h-full"/>
+                </div>
             </div>
             <div class="ml-5 mt-3 text-white w-2/4 max-sm:ml-2">
                 <div class="text-4xl max-sm:text-lg font-semibold tracking-wider"><span class="text-7xl font-bold max-sm:text-2xl">Word</span>&nbsp;#TYPING TEST WEBSITE</div>
@@ -369,8 +364,11 @@ setInterval(() => {
         </div>
 
          <div class="w-screen bg-white h-96 flex max-sm:h-fit">
-            <div class="bg-gray-500 h-full w-2/5">
-                <img src="/images/al-b.jpg" alt="alumilize" class="h-full w-full max-sm:h-24">
+            <div class="w-2/5">
+                <img src="/images/al-b.jpg" alt="alumilize" class="h-full w-full max-sm:hidden">
+                <div class="h-full w-full p-1 mob">
+                    <img src="/images/al2Mob.png" class="rounded-xl bg-white w-full h-full"/>
+                </div>
             </div>
             <div class="ml-5 mt-3 text-[#1F413B] w-2/4 max-sm:ml-2">
                 <div class="text-4xl max-sm:text-lg font-semibold tracking-wider"><span class="text-7xl font-bold max-sm:text-2xl">E</span>&nbsp;-Book Online Bookstore</div>
@@ -391,8 +389,11 @@ setInterval(() => {
             </div>
         </div>
         <div class="w-screen bg-[#2F6859] h-96 flex max-sm:h-fit">
-            <div class="bg-gray-400 w-2/5">
-                <img src="/images/bnw.jpg" alt="bnw" class="w-full h-full max-sm:h-24">
+            <div class="w-2/5">
+                <img src="/images/bnw.jpg" alt="bnw" class="w-full h-full max-sm:h-24 max-sm:hidden">
+                <div class="h-full w-full p-1 mob">
+                    <img src="/images/bnwMob.png" class="rounded-xl bg-white w-full h-full"/>
+                </div>
             </div>
             <div class="ml-5 text-white w-2/4 mt-1 max-sm:ml-2">
                 <div class="text-4xl font-semibold tracking-wider max-sm:text-lg"><span class="text-7xl font-bold max-sm:text-2xl">SIT</span>&nbsp;-Announcement System</div>
@@ -414,12 +415,15 @@ setInterval(() => {
             </div>
         </div>
         <div class="w-screen bg-[#2F6859] h-96 flex max-sm:h-fit">
-            <div class="w-2/5">
-                <img src="/images/bus.jpg" class="h-full w-full">
+            <div class=" w-2/5">
+                <img src="/images/bus.jpg" class="h-full w-full max-sm:hidden">
+                <div class="h-full w-full p-1 mob">
+                    <img src="/images/busMob.png" class="rounded-xl bg-white w-full h-full"/>
+                </div>
             </div>
             <div class="ml-5 text-white w-2/4 mt-1 max-sm:ml-2">
                 <div class="text-4xl max-sm:text-lg font-semibold tracking-wider"><span class="text-7xl font-bold max-sm:text-2xl">BUS</span>&nbsp;#Ticket Booking System</div>
-                <div class="text-xl max-sm:text-xs">INT-204 User Experience Design</div>
+                <div class="text-xl max-sm:text-xs">INT-104 User Experience Design</div>
                 <div class="mt-2 max-sm:mt-1 text-xl max-sm:hidden max-sm:text-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design a mobile app used to track buses and calculate fares based on distance traveled.</div>
                 <div class="text-xl mt-2 max-sm:mt-1  max-sm:text-xs">Used Languages, libaries, frameworks: <span class="text-yellow-500">Figma</span></div>
                 <div class="text-xl mt-2 max-sm:mt-1 max-sm:text-xs">Figma : <a href="https://www.figma.com/file/M35yOfYD32UABPsZNHPNFN/Untitled?type=design&node-id=0%3A1&mode=design&t=k4I02xaPjViXgfxS-1" class="underline-offset-1 underline" target="_blank">https://www.figma.com/</a></div>
@@ -436,29 +440,14 @@ setInterval(() => {
     </div>
 </div>
     
-
-
-    <!-- <div class="grid grid-cols-4 h-72 gap-4 px-5 text-white my-10">
-                <div v-motion-fade-visible class=" bg-white rounded-xl">
-                    <div class="h-3/4 rounded-xl bg-[#0B132B]"></div>
-                    <div class="m-2 flex justify-center">UX / UI Desigins</div>
-                </div>
-                <div v-motion-fade-visible class=" bg-white rounded-xl">
-                    <div class="h-3/4 rounded-xl bg-[#0B132B]"></div>
-                    <div class="m-2 flex justify-center">xxxx</div>
-                </div>
-                <div v-motion-fade-visible class=" bg-white rounded-xl">
-                    <div class="h-3/4 rounded-xl bg-[#0B132B]"></div>
-                    <div class="m-2 flex justify-center">xxxx</div>
-                </div>
-                <div v-motion-fade-visible class=" bg-white rounded-xl">
-                    <div class="h-3/4 rounded-xl bg-[#0B132B]"></div>
-                    <div class="m-2 flex justify-center">xxxx</div>
-                </div>
-        </div> -->
 </template>
  
 <style scoped>
+@media only screen and (min-width: 768px) {
+    .mob{
+        display: none;
+    }
+}
 .home{
     padding: 0;
     margin: 0;
