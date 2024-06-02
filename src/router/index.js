@@ -10,7 +10,6 @@ const router = createRouter({
   routes: [
     {
       redirect: '/',
-      redirect: '/home'
     },
     {
       path: '/about',
@@ -23,7 +22,7 @@ const router = createRouter({
       component: Contact
     },
     {
-      path: '/home',
+      path: '/',
       name: 'Home',
       component: () => import("@/views/Home.vue"),
     },
