@@ -25,7 +25,7 @@ const router = createRouter({
     {
       path: '/home',
       name: 'Home',
-      component: Home
+      component: () => import("@/views/Home.vue"),
     },
     {
       path: '/project',
@@ -36,7 +36,13 @@ const router = createRouter({
       path: '/resume',
       name: 'Resume',
       component: Resume
-    }
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      redirect: "/",
+      name: "not-found",
+      component: () => import("@/views/Home.vue"),
+    },
   ]
 })
 
