@@ -1,6 +1,43 @@
 <script setup>
+import { useHead } from '@vueuse/head';
 import { ref,computed } from 'vue';
 import Footer from '../components/Footer.vue';
+
+useHead({
+  title: 'Thaninpong Panthawong',
+  meta: [
+    {
+      name: 'description',
+      content: 'Home Page',
+    },
+    {
+      name: 'keywords',
+      content: 'Thaninpong, Thaninpong-non, nonThaninpong, Thaninpong Panthawong, ธนินท์พงษ์, non thaninpong, thaninpong-non.vercel, thaninpong-non vercel',
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://thaninpong-non.vercel.app/",
+        "@type": "Article",
+        "headline": "My Home Page",
+        "datePublished": "2023-06-01",
+        "author": {
+          "@type": "Person",
+          "name": "Thaninpong Panthawong",
+        },
+      }),
+    },
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://thaninpong-non.vercel.app/',
+    },
+  ],
+});
+
 const name = ref(['Thaninpong', 'Developer']);
 const currentIndex = ref(0);
 const currentCharIndex = ref(0);
