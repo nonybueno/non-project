@@ -66,18 +66,6 @@ setInterval(() => {
     <meta name="description" content="Home Page">
     <meta name="keywords" content="Thaninpong, Thaninpong-non, nonThaninpong, Thaninpong Panthawong, ธนินท์พงษ์, non thaninpong, thaninpong-non.vercel, thaninpong-non vercel">
     <link rel="canonical" href="https://thaninpong-non.vercel.app/">
-    <script type="application/ld+json">
-    {
-    "@context": "https://thaninpong-non.vercel.app/",
-    "@type": "Article",
-    "headline": "My Home Page",
-    "datePublished": "2023-06-01",
-    "author": {
-        "@type": "Person",
-        "name": "Thaninpong Panthawong"
-    }
-    }
-    </script>
     <div class="home">
         <div class="bg-[#27423D] h-5 max-sm:h-3"></div>
         <div class="flex justify-center h-[12.5cm] max-sm:h-[9cm] max-sm:w-fit bg-[url('/images/D3-Pan-145.jpg')] w-full">

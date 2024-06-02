@@ -8,9 +8,10 @@ import Resume from '@/views/Resume.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      redirect: '/',
-    },
+    // {
+    //   redirect: '/',
+    //   redirect: '/home'
+    // },
     {
       path: '/about',
       name: 'About',
@@ -20,6 +21,11 @@ const router = createRouter({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/home',
+      name: 'Home',
+      component: Home
     },
     {
       path: '/',
