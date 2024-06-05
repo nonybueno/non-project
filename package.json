@@ -1,7 +1,7 @@
 {
   "name": "non-proj",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "homepage": "https://nonybueno.github.io/non-project",
   "scripts": {
     "predeploy": "npm run build",
