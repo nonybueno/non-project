@@ -11,7 +11,6 @@ export default defineConfig({
   optimizeDeps: {
     include: ['vue'],
   },
-  base: "/non-project/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
