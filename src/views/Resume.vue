@@ -5,7 +5,6 @@
 <template>
 <div>
     <div>
-        d
     <div class="w-full">
     <div class="bg-[#0B132B] h-5"></div>
     <div class="flex justify-center items-center">
