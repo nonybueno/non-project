@@ -34,7 +34,7 @@ export const profile = {
     "An aspiring software developer with a strong interest in coding, looking for a role to apply my skills in building efficient back-end systems and contribute to a dynamic team.",
   bio: [
     "Hello, my name is Thaninpong Panthawong, but you can call me Non. I currently live in the Jatujak area of Bangkok, near Phaholyothin. I completed my entire schooling journey at Sukhondheerawidh School, from primary to high school. In my free time, I enjoy engaging with various activities and I love reading articles to keep myself updated with the latest trends and developments in the IT field.",
-    "I am currently a fourth-year student pursuing a bachelor's degree in Information Technology at King Mongkut's University of Technology Thonburi. Ever since I was in high school, I developed a passion for coding — the idea of constantly learning and exploring new technologies greatly appeals to me.",
+    "I have completed my bachelor's degree in Information Technology at King Mongkut's University of Technology Thonburi. Ever since I was in high school, I developed a passion for coding — the idea of constantly learning and exploring new technologies greatly appeals to me.",
   ],
 };
 
