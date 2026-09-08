@@ -1,6 +1,8 @@
 <script setup>
+import { computed } from 'vue'
 import { useHead } from '@vueuse/head'
 import { contact, socials, profile } from '@/data/content'
+import { t } from '@/i18n'
 import SpeechBubble from '@/components/ui/SpeechBubble.vue'
 import MangaButton from '@/components/ui/MangaButton.vue'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
@@ -10,12 +12,12 @@ useHead({
   meta: [{ name: 'description', content: `Contact ${profile.name} (Non) — email, phone, GitHub and Linktree.` }],
 })
 
-const cards = [
-  { label: 'Email', jp: 'メール', value: contact.email, href: `mailto:${contact.email}` },
-  { label: 'Phone', jp: '電話', value: contact.phone, href: `tel:${contact.phone.replace(/-/g, '')}` },
-  { label: 'Linktree', jp: 'リンク', value: contact.linktree.label, href: contact.linktree.url },
-  { label: 'GitHub', jp: 'ギットハブ', value: contact.github.label, href: contact.github.url },
-]
+const cards = computed(() => [
+  { label: 'Email', jp: t('contact.email'), value: contact.email, href: `mailto:${contact.email}` },
+  { label: 'Phone', jp: t('contact.phone'), value: contact.phone, href: `tel:${contact.phone.replace(/-/g, '')}` },
+  { label: 'Linktree', jp: t('contact.link'), value: contact.linktree.label, href: contact.linktree.url },
+  { label: 'GitHub', jp: t('contact.github'), value: contact.github.label, href: contact.github.url },
+])
 </script>
 
 <template>
@@ -24,18 +26,18 @@ const cards = [
       <div class="pointer-events-none absolute inset-0 opacity-[0.05] radial-lines text-ink" />
       <div class="relative mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
         <p class="mb-3 inline-block border-[3px] border-ink bg-ink px-3 py-1 font-gothic text-[11px] font-black uppercase tracking-widest2 text-paper">
-          お問い合わせ · Get in touch
+          {{ t('contact.kicker') }}
         </p>
         <div class="flex flex-wrap items-center gap-5">
           <h1 class="font-display text-5xl uppercase leading-[0.9] tracking-tight sm:text-7xl lg:text-8xl">
-            Contact
+            {{ t('contact.title') }}
           </h1>
           <div class="-rotate-3">
-            <SpeechBubble tail="bl">Let's talk!</SpeechBubble>
+            <SpeechBubble tail="bl">{{ t('contact.letsTalk') }}</SpeechBubble>
           </div>
         </div>
         <p class="mt-4 max-w-xl font-gothic text-sm text-smoke sm:text-base">
-          Reach out about a project, a camp, or just to say hi — replies come faster by email.
+          {{ t('contact.intro') }}
         </p>
       </div>
     </section>
@@ -66,7 +68,7 @@ const cards = [
       </div>
 
       <div class="mt-14">
-        <SectionHeading en="Elsewhere" jp="その他" no="•" />
+        <SectionHeading :en="t('contact.elsewhere')" :jp="t('contact.elsewhereJp')" no="•" />
         <div class="flex flex-wrap gap-4">
           <a
             v-for="s in socials"
@@ -87,10 +89,10 @@ const cards = [
 
       <div class="mt-14 grid gap-6 border-t-[3px] border-dotted border-ink pt-10 sm:grid-cols-[1fr_auto] sm:items-end">
         <div>
-          <p class="font-gothic text-[11px] font-black uppercase tracking-widest2 text-smoke">Based in</p>
+          <p class="font-gothic text-[11px] font-black uppercase tracking-widest2 text-smoke">{{ t('contact.basedIn') }}</p>
           <p class="mt-1 font-gothic text-lg font-black">{{ contact.address }}</p>
         </div>
-        <MangaButton :href="contact.resume" download size="lg">Download resume ▽</MangaButton>
+        <MangaButton :href="contact.resume" download size="lg">{{ t('contact.downloadResume') }}</MangaButton>
       </div>
     </section>
   </div>

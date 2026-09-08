@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { projects } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 
 const ranked = computed(() => [...projects].sort((a, b) => a.rank - b.rank))
@@ -10,8 +11,8 @@ const ranked = computed(() => [...projects].sort((a, b) => a.rank - b.rank))
   <section id="ranking" class="border-b-[3px] border-ink bg-paper-soft">
     <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
       <div class="flex flex-wrap items-end justify-between gap-4">
-        <SectionHeading en="Manga Ranking" jp="週間ランキング" no="05" class="!mb-0" />
-        <p class="mb-1 font-mincho text-xs text-smoke">集計期間 2021 – 2023 · by build scope</p>
+        <SectionHeading :en="t('ranking.heading')" :jp="t('ranking.headingJp')" no="05" class="!mb-0" />
+        <p class="mb-1 font-mincho text-xs text-smoke">{{ t('ranking.period') }}</p>
       </div>
 
       <div class="mt-8 grid gap-4 lg:grid-cols-2">

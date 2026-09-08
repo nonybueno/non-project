@@ -1,8 +1,10 @@
 <script setup>
-import { ref, watch } from "vue";
+import { ref, computed, watch } from "vue";
 import { useRoute } from "vue-router";
 import { pageNav, sectionNav } from "@/data/content";
+import { t } from "@/i18n";
 import MangaButton from "@/components/ui/MangaButton.vue";
+import LanguageSwitcher from "@/components/ui/LanguageSwitcher.vue";
 
 const route = useRoute();
 const open = ref(false);
@@ -14,8 +16,7 @@ watch(
   },
 );
 
-const marquee =
-  "THANINPONG PANTHAWONG ・ タニンポン・パンタウォン ・ MY PROJECT ・ タニンポン・パンタウォン ・ EST. 2021 ・ ";
+const marquee = computed(() => t("marquee"));
 </script>
 
 <template>
@@ -73,11 +74,12 @@ const marquee =
       </nav>
 
       <div class="flex items-center gap-3">
+        <LanguageSwitcher class="hidden sm:inline-flex" />
         <MangaButton to="/resume" size="sm" class="hidden sm:inline-flex"
-          >Resume</MangaButton
+          >{{ t("header.resume") }}</MangaButton
         >
         <button
-          class="flex h-10 w-10 items-center justify-center border-[3px] border-ink bg-paper shadow-panel-sm lg:hidden"
+          class="flex h-10 w-10 cursor-pointer items-center justify-center border-[3px] border-ink bg-paper shadow-panel-sm lg:hidden"
           :aria-expanded="open"
           aria-label="Toggle menu"
           @click="open = !open"
@@ -152,8 +154,9 @@ const marquee =
               item.labelJp
             }}</span>
           </router-link>
-          <MangaButton to="/resume" size="md" class="mt-4 w-full"
-            >Download Resume</MangaButton
+          <LanguageSwitcher block class="mt-4" />
+          <MangaButton to="/resume" size="md" class="mt-3 w-full"
+            >{{ t("header.resume") }}</MangaButton
           >
         </nav>
       </div>

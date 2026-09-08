@@ -1,6 +1,8 @@
 <script setup>
+import { computed } from 'vue'
 import { useHead } from '@vueuse/head'
 import { profile, magazine } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import SpeechBubble from '@/components/ui/SpeechBubble.vue'
 import MangaButton from '@/components/ui/MangaButton.vue'
@@ -10,11 +12,11 @@ useHead({
   meta: [{ name: 'description', content: `About ${profile.name} (Non) — ${profile.year} at ${profile.universityShort}.` }],
 })
 
-const timeline = [
-  { when: 'Primary – High School', what: profile.school, note: 'Nakhon Pathom' },
-  { when: '2020 – Present', what: profile.university, note: profile.faculty },
-  { when: '2021 – 2023', what: 'Four course builds + two SIT camps', note: 'Front-End · Back-End · UX' },
-]
+const timeline = computed(() => [
+  { when: t('about.tl1When'), what: profile.school, note: t('about.tl1Note') },
+  { when: t('about.tl2When'), what: profile.university, note: profile.faculty },
+  { when: t('about.tl3When'), what: t('about.tl3What'), note: t('about.tl3Note') },
+])
 </script>
 
 <template>
@@ -25,7 +27,7 @@ const timeline = [
       <div class="relative mx-auto grid max-w-[1400px] items-center gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[1fr_0.8fr]">
         <div>
           <p class="mb-3 inline-block border-[3px] border-ink bg-ink px-3 py-1 font-gothic text-[11px] font-black uppercase tracking-widest2 text-paper">
-            人物紹介 · Character Profile
+            {{ t('about.kicker') }}
           </p>
           <h1 class="font-display text-5xl uppercase leading-[0.9] tracking-tight sm:text-7xl lg:text-8xl">
             {{ profile.name }}
@@ -35,14 +37,14 @@ const timeline = [
           </p>
           <div class="mt-6 flex flex-wrap gap-2">
             <span class="border-2 border-ink px-2.5 py-1 font-gothic text-xs font-bold">{{ profile.role }}</span>
-            <span class="border-2 border-ink px-2.5 py-1 font-gothic text-xs font-bold">Born {{ profile.birthDate }}</span>
+            <span class="border-2 border-ink px-2.5 py-1 font-gothic text-xs font-bold">{{ t('about.born') }} {{ profile.birthDate }}</span>
             <span class="border-2 border-ink px-2.5 py-1 font-gothic text-xs font-bold">{{ profile.location }}</span>
           </div>
         </div>
 
         <div class="relative mx-auto w-full max-w-xs">
           <div class="absolute -left-3 -top-3 z-10 -rotate-6">
-            <SpeechBubble tail="br" invert>Hello, I'm Non!</SpeechBubble>
+            <SpeechBubble tail="br" invert>{{ t('about.hello') }}</SpeechBubble>
           </div>
           <div class="overflow-hidden rounded-[1.5rem] border-[4px] border-ink bg-paper shadow-panel-lg">
             <img
@@ -59,7 +61,7 @@ const timeline = [
     <!-- bio -->
     <section class="border-b-[3px] border-ink">
       <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-        <SectionHeading en="The Story" jp="ものがたり" no="01" />
+        <SectionHeading :en="t('about.story')" :jp="t('about.storyJp')" no="01" />
         <div class="grid gap-6 lg:grid-cols-2">
           <p
             v-for="(para, i) in profile.bio"
@@ -76,7 +78,7 @@ const timeline = [
     <!-- facts -->
     <section class="border-b-[3px] border-ink bg-ink text-paper">
       <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-        <SectionHeading en="Data File" jp="データファイル" no="02" invert />
+        <SectionHeading :en="t('about.dataFile')" :jp="t('about.dataFileJp')" no="02" invert />
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <div
             v-for="f in magazine.facts"
@@ -93,7 +95,7 @@ const timeline = [
     <!-- timeline -->
     <section class="border-b-[3px] border-ink">
       <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-        <SectionHeading en="Timeline" jp="年表" no="03" />
+        <SectionHeading :en="t('about.timeline')" :jp="t('about.timelineJp')" no="03" />
         <ol class="border-[3px] border-ink bg-paper shadow-panel">
           <li
             v-for="(t, i) in timeline"
@@ -109,8 +111,8 @@ const timeline = [
         </ol>
 
         <div class="mt-10 flex flex-wrap gap-3">
-          <MangaButton to="/resume" size="lg">Download resume</MangaButton>
-          <MangaButton to="/contact" variant="outline" size="lg">Get in touch</MangaButton>
+          <MangaButton to="/resume" size="lg">{{ t('about.downloadResume') }}</MangaButton>
+          <MangaButton to="/contact" variant="outline" size="lg">{{ t('about.getInTouch') }}</MangaButton>
         </div>
       </div>
     </section>

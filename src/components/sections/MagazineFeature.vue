@@ -1,5 +1,6 @@
 <script setup>
 import { magazine } from '@/data/content'
+import { t } from '@/i18n'
 import MangaButton from '@/components/ui/MangaButton.vue'
 </script>
 
@@ -23,7 +24,7 @@ import MangaButton from '@/components/ui/MangaButton.vue'
               />
               <div class="pointer-events-none absolute inset-x-0 bottom-0 h-20 halftone-fade rotate-180 text-ink" />
               <div class="absolute bottom-3 left-3 right-3">
-                <p class="font-mincho text-xs font-bold text-ink/70">特集 / Feature</p>
+                <p class="font-mincho text-xs font-bold text-ink/70">{{ t('mag.feature') }}</p>
                 <p class="font-display text-xl uppercase leading-none">{{ magazine.feature }}</p>
               </div>
               <span class="absolute right-2 top-2 rotate-6 border-2 border-ink bg-ink px-2 py-1 font-display text-xs text-paper">
@@ -47,7 +48,7 @@ import MangaButton from '@/components/ui/MangaButton.vue'
 
         <!-- feature text -->
         <div>
-          <p class="mb-2 font-mincho text-sm font-bold text-paper/60">マガジン / {{ magazine.period }}</p>
+          <p class="mb-2 font-mincho text-sm font-bold text-paper/60">{{ t('mag.periodPrefix') }}{{ magazine.period }}</p>
           <h2 class="font-display text-4xl uppercase leading-[0.95] sm:text-6xl">
             {{ magazine.masthead }}
           </h2>
@@ -67,7 +68,7 @@ import MangaButton from '@/components/ui/MangaButton.vue'
           </dl>
 
           <div class="mt-8">
-            <MangaButton to="/about" variant="ghost-inv" size="lg">Read the full profile →</MangaButton>
+            <MangaButton to="/about" variant="ghost-inv" size="lg">{{ t('mag.readProfile') }}</MangaButton>
           </div>
         </div>
       </div>

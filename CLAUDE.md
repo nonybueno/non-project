@@ -24,7 +24,26 @@ Japanese web manga magazine** (structure inspired by Ciao Plus; original design)
 socials, skills, activities (camps), projects (builds), `experience` + `hackathons` (from the
 résumé PDF), the magazine/CV block, and a merged date-sorted `updates` feed. The manga-magazine
 layout renders entirely from these objects; to change copy, images, links or ordering, edit
-this file, not the components. The portfolio material is mapped onto magazine sections
+this file, not the components. Edit the English source in the `base` object; the named exports
+(`profile`, `projects`, …) are **reactive** — a `watchEffect` re-merges the language overlay and
+updates them in place, so importers never change their `import { … } from '@/data/content'`.
+Any component that captures one of these once at setup (`const top = experience[0]`,
+`new Set(projects.map(…))`) **must wrap it in `computed`** or it goes stale on a language switch.
+
+### Internationalisation
+
+`src/i18n.js` holds the language switch: a single app-wide reactive `lang` ref (`'th' | 'en' |
+'jp-en'`, default `'jp-en'`, persisted to `localStorage['non-lang']`), `setLang`, the `LANGS`
+list, and `t(key, vars)` for UI-chrome strings from the `ui` dictionary (dotted keys, falls back
+en → jp-en, `{placeholder}` interpolation). `t()` reads `lang.value` so it is reactive inside
+templates / `computed` / prop bindings — but a value captured in a plain `const` at setup is
+**not**; use `computed(() => t('…'))` or pass `:prop="t('…')"`. Editorial content is translated
+in **`src/data/content.i18n.js`** (`th` full overlay, `en` just blanks the nav furigana),
+merged onto `base` item-by-item (by array index) in `content.js`. `SectionHeading` gets its
+`en=` / `jp=` from `t()` — the big display title stays English in all modes; the JP kicker slot
+carries the localised sub-heading. `src/components/ui/LanguageSwitcher.vue` (TH / EN / JP·EN
+segmented control) sits in `SiteHeader` (main bar + mobile drawer, `block` prop for full-width).
+`useTypewriter` accepts a getter/ref for its word list and restarts when it changes. The portfolio material is mapped onto magazine sections
 (projects → "manga titles", activities → "articles", `experience` → "experience ranking",
 `hackathons` → the Hackathons section, skills → "recommended series", About/CV → "magazine
 issue"). The downloadable CV is `public/resume/Thaninpong_Resume.pdf` (`contact.resume`).

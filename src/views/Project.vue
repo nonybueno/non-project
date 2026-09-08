@@ -1,7 +1,8 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useHead } from '@vueuse/head'
 import { projects } from '@/data/content'
+import { t, lang } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import MangaButton from '@/components/ui/MangaButton.vue'
 
@@ -10,10 +11,15 @@ useHead({
   meta: [{ name: 'description', content: 'Selected builds by Thaninpong (Non) Panthawong — full-stack, client-side and UX/UI course projects.' }],
 })
 
-const categories = ['All', ...new Set(projects.map((p) => p.category))]
-const active = ref('All')
+const ALL = '__all__'
+const categories = computed(() => [ALL, ...new Set(projects.map((p) => p.category))])
+const active = ref(ALL)
+// category values are localised, so a stale filter would match nothing after a switch
+watch(lang, () => {
+  active.value = ALL
+})
 const list = computed(() =>
-  active.value === 'All' ? projects : projects.filter((p) => p.category === active.value),
+  active.value === ALL ? projects : projects.filter((p) => p.category === active.value),
 )
 </script>
 
@@ -23,24 +29,24 @@ const list = computed(() =>
       <div class="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full halftone-lg text-ink/20" />
       <div class="relative mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
         <p class="mb-3 inline-block border-[3px] border-ink bg-ink px-3 py-1 font-gothic text-[11px] font-black uppercase tracking-widest2 text-paper">
-          作品一覧 · Catalogue
+          {{ t('project.kicker') }}
         </p>
         <h1 class="font-display text-5xl uppercase leading-[0.9] tracking-tight sm:text-7xl lg:text-8xl">
-          Projects
+          {{ t('project.title') }}
         </h1>
         <p class="mt-4 max-w-xl font-gothic text-sm text-smoke sm:text-base">
-          Every "volume" is a real course or team build — full source, live links and the stack used.
+          {{ t('project.intro') }}
         </p>
 
         <div class="mt-8 flex flex-wrap gap-2">
           <button
             v-for="c in categories"
             :key="c"
-            class="border-[3px] border-ink px-3 py-1.5 font-gothic text-xs font-black uppercase tracking-widest transition-colors"
+            class="cursor-pointer border-[3px] border-ink px-3 py-1.5 font-gothic text-xs font-black uppercase tracking-widest transition-colors"
             :class="active === c ? 'bg-ink text-paper' : 'bg-paper text-ink hover:bg-paper-gray'"
             @click="active = c"
           >
-            {{ c }}
+            {{ c === ALL ? t('project.all') : c }}
           </button>
         </div>
       </div>

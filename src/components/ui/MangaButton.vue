@@ -19,7 +19,7 @@ const isExternal = computed(() => props.href && !props.download && !props.href.s
 
 const classes = computed(() => {
   const base =
-    'inline-flex items-center justify-center gap-2 border-[3px] border-ink font-gothic font-bold uppercase tracking-widest transition-all duration-150 hover:-translate-x-[3px] hover:-translate-y-[3px] active:translate-x-0 active:translate-y-0'
+    'inline-flex cursor-pointer items-center justify-center gap-2 border-[3px] border-ink font-gothic font-bold uppercase tracking-widest transition-all duration-150 hover:-translate-x-[3px] hover:-translate-y-[3px] active:translate-x-0 active:translate-y-0'
   const variants = {
     solid: 'bg-ink text-paper shadow-panel-sm hover:shadow-panel',
     outline: 'bg-paper text-ink shadow-panel-sm hover:shadow-panel',

@@ -1,11 +1,13 @@
 <script setup>
+import { computed } from "vue";
 import { profile, socials, projects } from "@/data/content";
+import { t } from "@/i18n";
 import { useTypewriter } from "@/composables/useTypewriter";
 import SpeechBubble from "@/components/ui/SpeechBubble.vue";
 import MangaButton from "@/components/ui/MangaButton.vue";
 
-const { text } = useTypewriter(["Thaninpong.", "a Developer.", "a Builder."]);
-const featured = projects[0];
+const { text } = useTypewriter(() => t("hero.words"));
+const featured = computed(() => projects[0]);
 </script>
 
 <template>
@@ -27,12 +29,12 @@ const featured = projects[0];
           <p
             class="mb-3 inline-block border-[3px] border-ink bg-ink px-3 py-1 font-gothic text-[11px] font-black uppercase tracking-widest2 text-paper"
           >
-            月刊 · Monthly Issue
+            {{ t("hero.kicker") }}
           </p>
           <h1
             class="font-display text-[3.2rem] uppercase leading-[0.9] tracking-tight sm:text-7xl lg:text-8xl"
           >
-            Hi, I'm
+            {{ t("hero.hi") }}
             <span class="block text-outline"
               >{{ text
               }}<span
@@ -46,13 +48,16 @@ const featured = projects[0];
           <div
             class="mt-6 max-w-md border-[3px] border-ink bg-ink px-4 py-3 font-gothic text-sm font-bold text-paper sm:text-base"
           >
-            I am a developer for
+            {{ t("hero.devFor") }}
+            <span class="underline decoration-2 underline-offset-2"
+              >Back-End</span
+            >,
             <span class="underline decoration-2 underline-offset-2"
               >Front-End</span
             >
-            and
+            {{ t("hero.and") }}
             <span class="underline decoration-2 underline-offset-2"
-              >Back-End</span
+              >Full-Stack</span
             >.
           </div>
 
@@ -62,10 +67,10 @@ const featured = projects[0];
 
           <div class="mt-7 flex flex-wrap items-center gap-3">
             <MangaButton :to="{ path: '/', hash: '#experience' }" size="md"
-              >See the works</MangaButton
+              >{{ t("hero.seeWorks") }}</MangaButton
             >
             <MangaButton to="/about" variant="outline" size="md"
-              >Read the profile</MangaButton
+              >{{ t("hero.readProfile") }}</MangaButton
             >
           </div>
 
@@ -115,7 +120,7 @@ const featured = projects[0];
                 <p
                   class="font-gothic text-[10px] font-black uppercase tracking-widest text-smoke"
                 >
-                  {{ featured.volume }} · No.1 Ranked
+                  {{ featured.volume }} · {{ t("hero.ranked") }}
                 </p>
                 <p class="font-gothic text-lg font-black leading-tight">
                   {{ profile.name }}

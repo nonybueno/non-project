@@ -1,11 +1,13 @@
 <script setup>
+import { computed } from 'vue'
 import { useHead } from '@vueuse/head'
+import { lang, htmlLang } from '@/i18n'
 import SiteHeader from '@/components/SiteHeader.vue'
 import SiteFooter from '@/components/SiteFooter.vue'
 
 useHead({
   titleTemplate: (t) => (t ? `${t} — NON PROJECT` : 'NON PROJECT — Web Manga Magazine'),
-  htmlAttrs: { lang: 'en' },
+  htmlAttrs: { lang: computed(() => htmlLang[lang.value] || 'en') },
 })
 </script>
 

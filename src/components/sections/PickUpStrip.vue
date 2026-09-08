@@ -1,9 +1,11 @@
 <script setup>
+import { computed } from 'vue'
 import { projects } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import TitleCard from '@/components/ui/TitleCard.vue'
 
-const rest = projects.slice(1)
+const rest = computed(() => projects.slice(1))
 </script>
 
 <template>
@@ -12,7 +14,7 @@ const rest = projects.slice(1)
       class="pointer-events-none absolute -left-10 top-12 h-40 w-40 rounded-full halftone-lg text-ink/15"
     />
     <div class="relative mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-      <SectionHeading en="Pick Up" jp="今月のピックアップ" no="03" />
+      <SectionHeading :en="t('pickup.heading')" :jp="t('pickup.headingJp')" no="03" />
       <div class="grid gap-4 sm:grid-cols-3">
         <TitleCard
           v-for="p in rest"

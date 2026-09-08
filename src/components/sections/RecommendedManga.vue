@@ -1,14 +1,15 @@
 <script setup>
 import { skills } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 </script>
 
 <template>
   <section id="recommended" class="border-b-[3px] border-ink bg-paper-soft">
     <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-      <SectionHeading en="Recommended" jp="編集部おすすめ" no="07" />
+      <SectionHeading :en="t('rec.heading')" :jp="t('rec.headingJp')" no="07" />
       <p class="-mt-4 mb-8 max-w-xl font-gothic text-sm text-smoke">
-        The skillset behind every build — four ongoing "series" Non keeps reading and shipping.
+        {{ t('rec.blurb') }}
       </p>
 
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -1,13 +1,14 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { hackathons } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import MangaButton from '@/components/ui/MangaButton.vue'
 
 const lightbox = ref(null)
 
 function openLightbox(h) {
-  lightbox.value = { src: h.certImage, alt: `${h.name} — certificate of participation` }
+  lightbox.value = { src: h.certImage, alt: t('hack.certAlt', { name: h.name }) }
 }
 function closeLightbox() {
   lightbox.value = null
@@ -22,7 +23,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
 <template>
   <section id="hackathons">
     <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-      <SectionHeading en="Hackathons" jp="ハッカソン" no="02" />
+      <SectionHeading :en="t('hack.heading')" :jp="t('hack.headingJp')" no="02" />
 
       <div class="grid gap-6 sm:grid-cols-2">
         <article
@@ -65,7 +66,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
                 <span
                   class="absolute bottom-2 right-2 border-2 border-ink bg-ink px-2 py-0.5 font-gothic text-[9px] font-black uppercase tracking-widest text-paper"
                 >
-                  Click to enlarge
+                  {{ t('hack.clickEnlarge') }}
                 </span>
               </button>
 
@@ -73,7 +74,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
                 v-if="h.certImage"
                 class="pointer-events-none absolute bottom-2 right-2 border-2 border-ink bg-ink px-2 py-1 font-gothic text-[10px] font-black uppercase tracking-widest text-paper transition-opacity duration-200 group-hover/cert:opacity-0"
               >
-                ✓ Certificate
+                {{ t('hack.certificate') }}
               </span>
             </div>
 
@@ -102,7 +103,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
                   v-if="h.certificate && !h.certImage"
                   class="border-2 border-ink bg-ink px-2 py-0.5 font-gothic text-[10px] font-black uppercase tracking-widest text-paper"
                 >
-                  ✓ Certificate
+                  {{ t('hack.certificate') }}
                 </span>
                 <span
                   v-for="t in h.stack"
@@ -118,7 +119,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
       </div>
 
       <div class="mt-8 flex justify-center">
-        <MangaButton to="/resume" size="md">See the full resume</MangaButton>
+        <MangaButton to="/resume" size="md">{{ t('exp.seeResume') }}</MangaButton>
       </div>
     </div>
 

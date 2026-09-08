@@ -1,5 +1,6 @@
 <script setup>
 import { updates } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import MangaButton from '@/components/ui/MangaButton.vue'
 
@@ -12,7 +13,7 @@ function fmt(d) {
 <template>
   <section id="updates" class="border-b-[3px] border-ink bg-paper">
     <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-      <SectionHeading en="Today's Updates" jp="本日の更新" no="04" />
+      <SectionHeading :en="t('updates.heading')" :jp="t('updates.headingJp')" no="04" />
 
       <ul class="border-[3px] border-ink bg-paper shadow-panel">
         <li
@@ -47,7 +48,7 @@ function fmt(d) {
               <span
                 v-if="i < 2"
                 class="border-2 border-current px-1.5 py-0.5 font-display text-[10px] uppercase"
-              >New</span>
+              >{{ t('updates.new') }}</span>
               <span class="font-display text-xl leading-none opacity-30 transition-opacity group-hover:opacity-100">›</span>
             </span>
           </router-link>
@@ -55,7 +56,7 @@ function fmt(d) {
       </ul>
 
       <div class="mt-6 flex justify-end">
-        <MangaButton to="/project" variant="outline" size="sm">All updates ›</MangaButton>
+        <MangaButton to="/project" variant="outline" size="sm">{{ t('updates.all') }}</MangaButton>
       </div>
     </div>
   </section>

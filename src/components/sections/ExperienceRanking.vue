@@ -1,10 +1,12 @@
 <script setup>
+import { computed } from 'vue'
 import { experience, contact } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import RankHeart from '@/components/ui/RankHeart.vue'
 
-const top = experience[0]
-const rest = experience.slice(1)
+const top = computed(() => experience[0])
+const rest = computed(() => experience.slice(1))
 </script>
 
 <template>
@@ -25,8 +27,8 @@ const rest = experience.slice(1)
     />
 
     <div class="relative mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-      <SectionHeading en="Experience" jp="職務経歴 · Work Ranking" no="01" class="!mb-2" />
-      <p class="mb-10 font-mincho text-xs text-smoke sm:mb-12">集計期間 2024 – 2026 · 5 companies</p>
+      <SectionHeading :en="t('exp.heading')" :jp="t('exp.headingJp')" no="01" class="!mb-2" />
+      <p class="mb-10 font-mincho text-xs text-smoke sm:mb-12">{{ t('exp.period') }}</p>
 
       <!-- No.1 -->
       <router-link
@@ -51,7 +53,7 @@ const rest = experience.slice(1)
                 <span
                   class="absolute bottom-2 left-2 border-2 border-ink bg-ink px-2 py-0.5 font-gothic text-[10px] font-black uppercase tracking-widest text-paper"
                 >
-                  現職 · Current
+                  {{ t('exp.current') }}
                 </span>
               </div>
             </div>
@@ -132,7 +134,7 @@ const rest = experience.slice(1)
           rel="noopener noreferrer"
           class="group inline-flex cursor-pointer items-center gap-3 rounded-full border-[3px] border-ink bg-ink px-7 py-3.5 font-gothic text-xs font-black uppercase tracking-widest2 text-paper shadow-panel transition-transform hover:-translate-y-1"
         >
-          See the full resume
+          {{ t('exp.seeResume') }}
           <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-paper">→</span>
         </a>
       </div>

@@ -1,6 +1,8 @@
 <script setup>
+import { computed } from 'vue'
 import { useHead } from '@vueuse/head'
 import { profile, contact, skills, projects, experience, hackathons } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 import MangaButton from '@/components/ui/MangaButton.vue'
 
@@ -9,16 +11,16 @@ useHead({
   meta: [{ name: 'description', content: `Resume of ${profile.name} (Non) — back-end developer, ${profile.universityShort}.` }],
 })
 
-const facts = [
-  { label: 'Name', value: profile.name },
-  { label: 'Nickname', value: profile.nickname },
-  { label: 'Born', value: profile.birthDate },
-  { label: 'Role', value: profile.role },
-  { label: 'Education', value: profile.year },
-  { label: 'GPAX', value: profile.gpax },
-  { label: 'Location', value: profile.location },
-  { label: 'Email', value: contact.email },
-]
+const facts = computed(() => [
+  { label: t('resume.fName'), value: profile.name },
+  { label: t('resume.fNickname'), value: profile.nickname },
+  { label: t('resume.fBorn'), value: profile.birthDate },
+  { label: t('resume.fRole'), value: profile.role },
+  { label: t('resume.fEducation'), value: profile.year },
+  { label: t('resume.fGpax'), value: profile.gpax },
+  { label: t('resume.fLocation'), value: profile.location },
+  { label: t('resume.fEmail'), value: contact.email },
+])
 </script>
 
 <template>
@@ -28,24 +30,24 @@ const facts = [
       <div class="relative mx-auto grid max-w-[1400px] items-center gap-8 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[1fr_auto]">
         <div>
           <p class="mb-3 inline-block border-[3px] border-paper px-3 py-1 font-gothic text-[11px] font-black uppercase tracking-widest2">
-            履歴書 · Curriculum Vitae
+            {{ t('resume.kicker') }}
           </p>
           <h1 class="font-display text-5xl uppercase leading-[0.9] tracking-tight sm:text-7xl lg:text-8xl">
-            Resume
+            {{ t('resume.title') }}
           </h1>
           <p class="mt-4 max-w-xl font-gothic text-sm text-paper/70 sm:text-base">
             {{ profile.summary }}
           </p>
         </div>
         <MangaButton :href="contact.resume" download variant="ghost-inv" size="lg">
-          Download PDF ▽
+          {{ t('resume.downloadPdf') }}
         </MangaButton>
       </div>
     </section>
 
     <section class="border-b-[3px] border-ink">
       <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-        <SectionHeading en="Profile" jp="基本情報" no="01" />
+        <SectionHeading :en="t('resume.profile')" :jp="t('resume.profileJp')" no="01" />
         <dl class="grid border-[3px] border-ink bg-paper shadow-panel sm:grid-cols-2">
           <div
             v-for="(f, i) in facts"
@@ -67,7 +69,7 @@ const facts = [
 
     <section class="border-b-[3px] border-ink bg-paper-soft">
       <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-        <SectionHeading en="Experience" jp="職務経歴" no="02" />
+        <SectionHeading :en="t('resume.experience')" :jp="t('resume.experienceJp')" no="02" />
         <ol class="border-[3px] border-ink bg-paper shadow-panel">
           <li
             v-for="job in experience"
@@ -110,7 +112,7 @@ const facts = [
 
         <div class="mt-6 border-[3px] border-dashed border-ink bg-paper p-5 sm:p-6">
           <p class="font-gothic text-[11px] font-black uppercase tracking-widest2 text-smoke">
-            Hackathons
+            {{ t('resume.hackathons') }}
           </p>
           <div v-for="h in hackathons" :key="h.name" class="mt-3">
             <p class="font-display text-lg uppercase">
@@ -125,13 +127,13 @@ const facts = [
                 rel="noopener noreferrer"
                 class="ml-1 inline-block border border-ink px-1 py-0.5 text-[9px] font-black uppercase tracking-wider hover:bg-ink hover:text-paper"
               >
-                Certificate ↗
+                {{ t('resume.certificate') }} ↗
               </a>
               <span
                 v-else-if="h.certificate"
                 class="ml-1 border border-ink px-1 py-0.5 text-[9px] font-black uppercase tracking-wider"
               >
-                Certificate
+                {{ t('resume.certificate') }}
               </span>
             </p>
             <ul class="mt-1.5 space-y-1">
@@ -160,7 +162,7 @@ const facts = [
 
     <section class="border-b-[3px] border-ink">
       <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-        <SectionHeading en="Skills" jp="スキル" no="03" />
+        <SectionHeading :en="t('resume.skills')" :jp="t('resume.skillsJp')" no="03" />
         <div class="grid gap-4 sm:grid-cols-2">
           <div
             v-for="s in skills"
@@ -188,7 +190,7 @@ const facts = [
 
     <section>
       <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-        <SectionHeading en="Selected Work" jp="主な作品" no="04" />
+        <SectionHeading :en="t('resume.selectedWork')" :jp="t('resume.selectedWorkJp')" no="04" />
         <ol class="border-[3px] border-ink bg-paper shadow-panel">
           <li
             v-for="p in projects"
@@ -212,8 +214,8 @@ const facts = [
         </ol>
 
         <div class="mt-10 flex flex-wrap gap-3">
-          <MangaButton to="/project" size="lg">See full projects</MangaButton>
-          <MangaButton to="/contact" variant="outline" size="lg">Contact Non</MangaButton>
+          <MangaButton to="/project" size="lg">{{ t('resume.seeProjects') }}</MangaButton>
+          <MangaButton to="/contact" variant="outline" size="lg">{{ t('resume.contactNon') }}</MangaButton>
         </div>
       </div>
     </section>

@@ -1,12 +1,13 @@
 <script setup>
 import { activities } from '@/data/content'
+import { t } from '@/i18n'
 import SectionHeading from '@/components/ui/SectionHeading.vue'
 </script>
 
 <template>
   <section id="articles" class="border-b-[3px] border-ink bg-paper">
     <div class="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20">
-      <SectionHeading en="Articles & Videos" jp="記事・動画" no="06" />
+      <SectionHeading :en="t('articles.heading')" :jp="t('articles.headingJp')" no="06" />
 
       <div class="grid gap-6 lg:grid-cols-2">
         <article
