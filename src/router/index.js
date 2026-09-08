@@ -1,54 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import About from '@/views/About.vue'
-import Contact from '@/views/Contact.vue'
-import Project from '@/views/Project.vue'
 import Home from '@/views/Home.vue'
-import Resume from '@/views/Resume.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // {
-    //   redirect: '/',
-    //   redirect: '/home'
-    // },
-    {
-      path: '/about',
-      name: 'About',
-      component: About
-    },
-    {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact
-    },
-    {
-      path: '/home',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/',
-      name: 'Home',
-      component: () => import("@/views/Home.vue"),
-    },
-    {
-      path: '/project',
-      name: 'Project',
-      component: Project
-    },
-    {
-      path: '/resume',
-      name: 'Resume',
-      component: Resume
-    },
-    {
-      path: "/:pathMatch(.*)*",
-      redirect: "/",
-      name: "not-found",
-      component: () => import("@/views/Home.vue"),
-    },
-  ]
+    { path: '/', name: 'home', component: Home },
+    { path: '/home', redirect: '/' },
+    { path: '/about', name: 'about', component: () => import('@/views/About.vue') },
+    { path: '/project', name: 'project', component: () => import('@/views/Project.vue') },
+    { path: '/resume', name: 'resume', component: () => import('@/views/Resume.vue') },
+    { path: '/contact', name: 'contact', component: () => import('@/views/Contact.vue') },
+    { path: '/:pathMatch(.*)*', name: 'not-found', redirect: '/' },
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+    if (to.hash) {
+      return { el: to.hash, top: 132, behavior: 'smooth' }
+    }
+    return { top: 0 }
+  },
 })
 
 export default router
