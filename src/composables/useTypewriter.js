@@ -31,7 +31,7 @@ export function useTypewriter(words, { typeMs = 110, deleteMs = 55, holdMs = 150
       text.value = word.slice(0, charIndex)
       if (charIndex === 0) {
         deleting = false
-        wordIndex = (wordIndex + 1) % words.length
+        wordIndex = (wordIndex + 1) % list.length
       }
     }
 
