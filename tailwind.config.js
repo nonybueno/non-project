@@ -16,10 +16,12 @@ module.exports = {
         "line-gray": "#c8c7c2",
       },
       fontFamily: {
-        gothic: ['"Zen Kaku Gothic New"', '"Noto Sans JP"', "system-ui", "sans-serif"],
-        mincho: ['"Shippori Mincho B1"', '"Noto Serif JP"', "serif"],
-        display: ['"Anton"', '"Zen Kaku Gothic New"', "Impact", "sans-serif"],
-        marker: ['"Yusei Magic"', '"Zen Kaku Gothic New"', "sans-serif"],
+        // "Noto Sans Thai" sits in every stack as the Thai fallback: Latin / JP
+        // glyphs still render in the manga faces, Thai text falls through to it.
+        gothic: ['"Zen Kaku Gothic New"', '"Noto Sans Thai"', '"Noto Sans JP"', "system-ui", "sans-serif"],
+        mincho: ['"Shippori Mincho B1"', '"Noto Sans Thai"', '"Noto Serif JP"', "serif"],
+        display: ['"Anton"', '"Noto Sans Thai"', '"Zen Kaku Gothic New"', "Impact", "sans-serif"],
+        marker: ['"Yusei Magic"', '"Noto Sans Thai"', '"Zen Kaku Gothic New"', "sans-serif"],
       },
       letterSpacing: {
         widest2: "0.28em",

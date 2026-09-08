@@ -17,7 +17,8 @@
     min-height: 100vh;
     background-color: #ffffff;
     color: #0f0f0f;
-    font-family: "Zen Kaku Gothic New", "Noto Sans JP", system-ui, sans-serif;
+    font-family: "Zen Kaku Gothic New", "Noto Sans Thai", "Noto Sans JP", system-ui,
+      sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
